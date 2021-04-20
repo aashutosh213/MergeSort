@@ -2,13 +2,13 @@
 
 using namespace std;
 
-void printArray(int arr[], int n)
-{
-    for(int i{0};i<n;i++){
-        cout<< arr[i]<<" ";
-    }
-    cout<<endl;
-}
+// void printArray(int arr[], int n)
+// {
+//     for(int i{0};i<n;i++){
+//         cout<< arr[i]<<" ";
+//     }
+//     cout<<endl;
+// }
 void merge(int a[], int left[], int right[],int nl, int nr){
     // int nl = sizeof(left)/sizeof(left[0]);
     // int nr = sizeof(right)/sizeof(right[0]);
@@ -31,7 +31,7 @@ void merge(int a[], int left[], int right[],int nl, int nr){
          a[k] = right[j];
         j++;k++;
     }
-    printArray(a,nl+nr);
+    // printArray(a,nl+nr);
 
 }
 
@@ -57,7 +57,7 @@ void mergeSort(int a[],int n){
 }
 
 int main(){
-    int arr[] {6,2,1,-8,0,-5,3,7};
+    int arr[] {6,2,1,-8,0,-5,3,7,9};
     int n = sizeof(arr)/sizeof(arr[0]);
 
     for(int i{0};i<n;i++){
